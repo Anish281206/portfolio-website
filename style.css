@@ -141,8 +141,7 @@ body
     }
     body
     {
-        background-color: rgba(8, 8, 55, 0.59);
-        background-image: url(imgs/bg3.png);
+        background-color: rgb(8, 8, 55);
         background-blend-mode: overlay;
         min-height: 150vh;
     }
@@ -158,6 +157,6 @@ body
         width: 80vw;
     }
     body{
-        background-image: url(imgs/bg2.png);
+        background-color:rgb(8, 8, 55);
     }
 }
