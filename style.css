@@ -4,7 +4,7 @@
 }
 header
 {
-    background-color: linear gradient(to right,rgb(8, 8, 55),rgb(6, 6, 55));
+    background: linear gradient(to right,rgb(8, 8, 55),rgb(6, 6, 55));
     color: rgb(31, 235, 143);
     font-family: Changa One,Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -21,6 +21,7 @@ body
     background-image: url(imgs/bg.png);
     background-blend-mode: overlay;
     min-height: 150vh;
+    width:100%;
 }
 #logo
 {
@@ -146,9 +147,14 @@ body
         min-height: 150vh;
     }
 }
-@media screen and (max-width:650px)
-{
-    body{
-        min-width:650px;
+@media screen and (max-width: 650px) {
+    .text-box {
+        width: auto;
+        margin: 20px;
+        font-size: 22px;
+    }
+
+    #b1, #b2, #b3 {
+        width: 80vw;
     }
 }
