@@ -142,7 +142,7 @@ body
     body
     {
         background-color: rgba(8, 8, 55, 0.59);
-        background-image: url(imgs/bg2.png);
+        background-image: url(imgs/bg3.png);
         background-blend-mode: overlay;
         min-height: 150vh;
     }
@@ -156,5 +156,8 @@ body
 
     #b1, #b2, #b3 {
         width: 80vw;
+    }
+    body{
+        background-image: url(imgs/bg2.png);
     }
 }
