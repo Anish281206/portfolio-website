@@ -14,6 +14,8 @@ header
     padding: 5px 10px;
     border-bottom: 2px solid rgb(31, 235, 143);
     position: sticky;
+    top: 0;
+    z-index: 100;
 }
 body
 {
@@ -32,13 +34,14 @@ body
 }
 .text-box{
     width: 600px;
-    height:300px;
+    height:auto;
     font-family: Roboto Mono,Arial, Helvetica, sans-serif;
     color: white;
     font-size: 30px;
     position: relative;
     margin: 50px;
     animation: slideIn 2s ease-in-out;
+    box-sizing: border-box;
 }
 @keyframes slideIn{
     from{
@@ -54,7 +57,7 @@ body
 {
     margin-left: auto;
 }
-#contact
+#a0
 {
     background:linear-gradient(45deg,rgb(31, 235, 143),rgb(20, 127, 176));
     font-family: Changa One,Arial, Helvetica, sans-serif;
@@ -68,6 +71,7 @@ body
     height: 50px;
     width: 150px;
     margin-left: auto;
+    box-sizing: border-box;
 }
 #b1,#b2,#b3
 {
@@ -75,7 +79,6 @@ body
     font-family: Space Mono,Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
-    margin-top: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,12 +91,14 @@ body
     animation: slideIn 2s ease-out both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
-    transition: background-color 0.3s ease-in-out;
+    transition: transform 0.25s ease,box shadow 0.25s ease;
     
 }
 #b1:hover,#b2:hover,#b3:hover
 {
     background:linear-gradient(45deg,rgb(31, 235, 143),rgb(20, 127, 176)) ;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(31, 235, 143, 0.25);
 }
 #i1,#i2,#i3
 {
@@ -103,6 +108,7 @@ body
 #a1,#a2,#a3,#a0
 {
     text-decoration: none;
+    box-sizing: border-box;
 }
 .social-handles{
     display: flex;
@@ -110,6 +116,7 @@ body
     align-items: center;
     justify-content: center;
     gap: 100px;
+    margin-top: 100px;
 }
 @media screen and (max-width:950px)
 {
@@ -165,12 +172,6 @@ body
         background-blend-mode: overlay;
         min-height: 150vh;
     }
-    .box
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 @media screen and (max-width: 650px) {
     .text-box {
@@ -180,9 +181,7 @@ body
     }
     .box
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 0px;
     }
     header
     {
