@@ -127,13 +127,14 @@ body
     }
     header
     {
-        background-color: linear gradient(to right,rgb(8, 8, 55),rgb(6, 6, 55));
+        background-color: linear gradient(to right,rgb(14, 32, 86),rgb(6, 6, 55));
         color: rgb(31, 235, 143);
         font-family: Changa One,Arial, Helvetica, sans-serif;
         font-size: 40px;
         display: flex;
         flex-direction:column;
         align-items: center;
+        justify-content: center;
         gap: 15px;
         padding: 5px 10px;
         border-bottom: 2px solid rgb(31, 235, 143);
@@ -182,6 +183,13 @@ body
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    header
+    {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
     }
 
     #b1, #b2, #b3 {
