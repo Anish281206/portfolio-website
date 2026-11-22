@@ -127,7 +127,7 @@ body
     }
     header
     {
-        background-color: linear gradient(to right,rgb(14, 32, 86),rgb(6, 6, 55));
+        background: linear-gradient(to right,rgb(14, 32, 86),rgb(6, 6, 55));
         color: rgb(31, 235, 143);
         font-family: Changa One,Arial, Helvetica, sans-serif;
         font-size: 40px;
