@@ -4,7 +4,7 @@
 }
 header
 {
-    background: linear gradient(to right,rgb(8, 8, 55),rgb(6, 6, 55));
+    background: linear-gradient(to right,rgb(14, 32, 86),rgb(6, 6, 55));
     color: rgb(31, 235, 143);
     font-family: Changa One,Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -50,9 +50,28 @@ body
         transform: translateY(0px);
     }
 }
+.box
+{
+    margin-left: auto;
+}
+#contact
+{
+    background:linear-gradient(45deg,rgb(31, 235, 143),rgb(20, 127, 176));
+    font-family: Changa One,Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(8, 8, 55); ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    margin-left: auto;
+}
 #b1,#b2,#b3
 {
-    background-color: rgb(8, 8, 55);
+    background-color: rgb(19, 19, 106);
     font-family: Space Mono,Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
@@ -74,14 +93,14 @@ body
 }
 #b1:hover,#b2:hover,#b3:hover
 {
-    background-color:rgb(31, 235, 143) ;
+    background:linear-gradient(45deg,rgb(31, 235, 143),rgb(20, 127, 176)) ;
 }
 #i1,#i2,#i3
 {
     height: 30px;
     width: 30px;
 }
-#a1,#a2,#a3
+#a1,#a2,#a3,#a0
 {
     text-decoration: none;
 }
