@@ -164,6 +164,12 @@ body
         background-blend-mode: overlay;
         min-height: 150vh;
     }
+    .box
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 650px) {
     .text-box {
