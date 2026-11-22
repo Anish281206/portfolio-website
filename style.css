@@ -126,6 +126,7 @@ body
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 200px;
     }
     #a1,#a2,#a3
     {
@@ -153,7 +154,6 @@ body
         font-family: Space Mono,Arial, Helvetica, sans-serif;
         font-size: 30px;
         color: white;
-        margin-top: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
