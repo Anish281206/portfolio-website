@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 header
 {
     background: linear-gradient(to right,rgb(14, 32, 86),rgb(6, 6, 55));
@@ -17,10 +21,31 @@ header
     top: 0;
     z-index: 100;
 }
+nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    font-family: Roboto Mono,Arial,sans-serif;
+}
+#n1,#n2
+{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#handles,
+#projects {
+    scroll-margin-top: 100px;
+}
 body
 {
     background-color: rgba(8, 8, 55, 0.59);
     background-image: url(imgs/bg.png);
+    background-size: cover;
     background-blend-mode: overlay;
     min-height: 150vh;
     width:100%;
@@ -46,7 +71,7 @@ body
 @keyframes slideIn{
     from{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(75px);
     }
     to{
         opacity: 1;
@@ -75,7 +100,7 @@ body
 }
 #b1,#b2,#b3
 {
-    background-color: rgb(19, 19, 106);
+    background-color: rgb(23, 23, 135);
     font-family: Space Mono,Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
@@ -116,7 +141,100 @@ body
     align-items: center;
     justify-content: center;
     gap: 100px;
-    margin-top: 100px;
+    margin-top: 200px;
+}
+#projects{
+    margin-top: 150px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family:  Space Mono,Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    animation: slideIn 2s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition: transform 0.25s ease,box shadow 0.25s ease; 
+}
+#pro1
+{
+    background-color:  rgb(23, 23, 135);
+    border: solid 2px rgb(31, 235, 143);
+    border-radius: 20px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:flex-start;
+    font-family: Space Mono,Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    width: 800px;
+    height: min-height(80px,90%);
+    gap:10px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 8px;
+    animation: slideIn 2s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition: transform 0.25s ease,box shadow 0.25s ease;
+}
+#pro1 img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#pro p{
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+#pro2
+{
+    background-color:  rgb(23, 23, 135);
+    border: solid 2px rgb(31, 235, 143);
+    border-radius: 20px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:flex-start;
+    font-family: Space Mono,Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    width: 800px;
+    height: min-height(80px,90%);
+    gap:10px;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 125px;
+    padding: 8px;
+    animation: slideIn 2s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition: transform 0.25s ease,box shadow 0.25s ease;
+}
+#pro2 img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#pro2 p{
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+#pro1:hover,#pro2:hover{
+        transform: scale(1.5);
 }
 @media screen and (max-width:950px)
 {
@@ -190,11 +308,26 @@ body
         align-items: center;
         justify-content: center;
     }
+    nav{
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    #pro1,#pro2
+    {
+        width: auto;
+    }
 
     #b1, #b2, #b3 {
         width: 80vw;
     }
     body{
         background-color:rgb(8, 8, 55);
+    }
+    #handles,
+    #projects {
+        scroll-margin-top: 220px;
     }
 }
